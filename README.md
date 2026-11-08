@@ -1,4 +1,4 @@
-# Multimodal Time-Series Forecasting
+# Probabilistic Forecasting
 
 When ChatGPT came out, I wanted to understand how sequence models work. The question I started with was simple: if a language model can predict the next word, can the same idea predict the next price? This repository records how that question changed as each approach failed in an informative way. It is a learning project (2023–2024), not a trading system.
 
