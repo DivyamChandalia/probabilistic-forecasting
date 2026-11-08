@@ -30,7 +30,7 @@ I discretized the returns into bins and trained a transformer with cross-entropy
 
 Two problems showed up:
 
-- **Cross-entropy ignores how wrong a wrong bin is.** Predicting a bin next to the true one costs as much as predicting one at the other end. I added an MSE term on the trajectory to the cross-entropy loss (`ChanduLoss`), so near-misses cost less than distant ones.
+- **Cross-entropy ignores how wrong a wrong bin is.** Predicting a bin next to the true one costs as much as predicting one at the other end. I added an MSE term on the trajectory to the cross-entropy loss (`BinnedCEPathMSELoss`), so near-misses cost less than distant ones.
 - **Binning is lossy, and the error compounds.** Quantization error at each step fed into the next autoregressive prediction, even with the hybrid loss.
 
 The notebook also includes a feedforward-network comparison.

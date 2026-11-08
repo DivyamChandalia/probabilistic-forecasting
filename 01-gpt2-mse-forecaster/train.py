@@ -68,7 +68,6 @@ for epoch in epoch_tqdm:
         optimizer.zero_grad()
 
         temp_src = src[:,:data.len_input]
-        # print(src.shape)
         # Forward pass
         output, past_key_values = model(src = temp_src, sos = sos)
         temp_src = output[:,-1,:].unsqueeze(1)

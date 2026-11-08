@@ -36,7 +36,6 @@ class GPTEmbedding(nn.Module):
             sos = self.sos_embedding(sos)
             sos = self.relu(sos)
             sos = sos.unsqueeze(1).permute(0,2,1)
-            # print(src.shape, sos.shape)
             src = torch.cat((sos, src), dim=2)
         src = src.permute(0,2,1)
         return src

@@ -70,7 +70,6 @@ class Data:
 
     def len_ticker(self, ticker_data):
         len = 0
-        # print(ticker_data)
         for data in ticker_data:
             len = len + data.shape[0]
         return len
@@ -179,7 +178,6 @@ class Data:
             pairs = self.norm_pairs(pairs)
             self.train_pairs = self.train_pairs + self.split_val(pairs)
             self.completed_tickers.append(symbol)
-            # print(pairs)
 
 
         for symbol, value in tqdm(self.test_data.items(), desc='Loading Test Data'):
