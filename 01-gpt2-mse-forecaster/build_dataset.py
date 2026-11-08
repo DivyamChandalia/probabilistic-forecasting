@@ -1,7 +1,8 @@
+import os
 from utils import Data, save_data
 import torch
 
-file_path = "/home/summer_20/Divyam/StockGPT/model/"
+file_path = os.path.dirname(os.path.abspath(__file__)) + "/"
 # Define the list of ticker symbols you want to retrieve data for
 crypto = ["BTC-USD", "ETH-USD", "BNB-USD", "XRP-USD", "DOGE-USD",
         "ADA-USD", "SOL-USD", "TRX-USD", "LTC-USD", "MATIC-USD",

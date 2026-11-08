@@ -27,7 +27,7 @@ class GPTEmbedding(nn.Module):
         src = self.relu(src)
         src = self.conv2(src)
         src = self.dropout2(src)
-        src = self.relu(s   rc)
+        src = self.relu(src)
         src = self.conv3(src)
         src = self.relu(src)                
 

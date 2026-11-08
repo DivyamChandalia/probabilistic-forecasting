@@ -74,7 +74,7 @@ class Data:
         for data in ticker_data:
             len = len + data.shape[0]
         return len
-load_data
+    # load_data
     def split_test(self, ticker_dict, symbol):
 
         ticker_len = self.len_ticker(ticker_dict[symbol])
